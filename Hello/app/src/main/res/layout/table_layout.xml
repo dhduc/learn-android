@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.ducdh.hello.MainActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+        <!-- hàng 1 : một cột -->
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:background="#b0b0b0"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="Hàng 1"
+                    android:textColor="#000"
+                    android:textSize="18dp"/>
+
+        </TableRow>
+
+        <!-- hàng 2: 3 cột -->
+
+        <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_weight="1"
+                    android:background="#dcdcdc"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Hàng 2 cột 1"
+                    android:textColor="#000000"/>
+
+            <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Hàng 2 cột 2"
+                    android:textColor="#000000"/>
+
+            <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_weight="1"
+                    android:background="#cac9c9"
+                    android:gravity="center"
+                    android:padding="20dip"
+                    android:text="Hàng 2 cột 3"
+                    android:textColor="#000000"/>
+        </TableRow>
+
+        <!-- hàng 3: 2 cột -->
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+            <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_weight="1"
+                    android:background="#b0b0b0"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="Hàng 3 cột 1"
+                    android:textColor="#000000"/>
+
+            <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_weight="1"
+                    android:background="#a09f9f"
+                    android:gravity="center"
+                    android:padding="18dip"
+                    android:text="Hàng 3 cột 2"
+                    android:textColor="#000000"/>
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
